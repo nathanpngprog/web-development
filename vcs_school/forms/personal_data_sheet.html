@@ -1,0 +1,375 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data Sheet</title>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            margin: 20px;
+        }
+    tr,td,th {
+        border:1px solid black;
+    }
+    .title-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 15px;
+        }
+    table {
+        width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+    }
+    .label {
+            background-color: lightgray;
+            font-weight: bold;
+            width: 20%;
+        }
+        .checkbox-group {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .sub-row {
+    padding-left: 95px;
+    margin-bottom: 8px;
+}
+    .res-table td {
+            border: none;
+            padding: 2px;
+        }
+    
+.pds-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    border: 1px solid #000;
+}
+.pds-table td {
+    border: 1px solid #000;
+    padding: 3px;
+}
+.pds-bg-gray {
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+.pds-center {
+    text-align: center;
+}
+.pds-table input[type="text"], 
+.pds-table input[type="date"] {
+    width: 98%;
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    outline: none;
+}
+.pds-table input::placeholder {
+    color: #999;
+}
+.sig-bar {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    border: 1px solid #000;
+    border-top: none;
+}
+.sig-bar td {
+    border: 1px solid #000;
+    height: 35px;
+}
+.text-red-italic {
+    color: red;
+    font-style: italic;
+    font-size: 8px;
+}
+.section-header, 
+    div:has(> .pds-table), 
+    h3 { 
+        clear: both !important; 
+        display: block !important; 
+        width: 100% !important;
+    }
+</style>
+</head>
+<body>
+<table>
+    <div class="title-container">
+    <tr>
+        <th colspan="8"><h4 style="text-align: left;">CS Form No.212</h4>
+            <p style="text-align: left;">Revised 2026</p>
+            <br>
+            <h1 style="text-align: center;">PERSONAL DATA SHEET</h1>
+            <br>
+            <h5>WARNING: Any misrepresentation made in the Personal Data Sheet and the Work Experience Sheet shall cause the filing of administrative/criminal case/s against the person concerned.</h5>
+            <h5>READ THE ATTACHED GUIDE TO FILLING OUT THE PERSONAL DATA SHEET (PDS) BEFORE ACCOMPLISHING THE PDS FORM.</h5>
+            <p>Tick appropriate boxes (☐) and use separate sheet if necessary. Indicate N/A if not applicable.  DO NOT ABBREVIATE.</p>
+        </div>
+        </th>
+    </tr>
+    <tr>
+        <th colspan="8"><h3 style="text-align: left; background-color: #7f7f7f; color: #fff; font-weight: bold; font-style: italic; padding: 5px; text-transform: uppercase; border: 1px solid #000;" class="section-header">I. PERSONAL INFORMATION</h3></th>
+    </tr>
+    <tr>
+        <td class="label">1.Surname</td>
+        <td colspan="3"><input type="text" name="surname" required></td>
+    </tr>
+    <tr>
+                <td class="label">FIRST NAME</td>
+                <td><input type="text" name="firstname" required></td>
+                <td class="label" style="width:15%;">NAME EXTENSION (JR., SR.)</td>
+                <td><input type="text" name="name_extension" style="width:80px;"></td>
+            </tr>
+    <tr>
+                <td class="label">MIDDLE NAME</td>
+                <td colspan="3"><input type="text" name="middlename"></td>
+            </tr>
+            <tr>
+                <td class="label">2. DATE OF BIRTH</td>
+                <td><input type="date" name="dob" required></td>
+                <td class="label">16. CITIZENSHIP <br><span style="text-align: center; margin: 5px;"> if holder of dual citizenship, <br>please indicate the details.</span></td>
+                <td>
+                    <div class="checkbox-group"><input type="checkbox" name="citizenship" value="Filipino"> Filipino</div>
+                    <div class="checkbox-group"><input type="checkbox" name="citizenship" value="Dual"> Dual Citizenship</div>
+                    <br>
+                    <div class="sub-row">
+        <label><input type="checkbox" name="dual_type" value="birth"> by birth</label>
+        <label style="margin-left: 20px;"><input type="checkbox" name="dual_type" value="naturalization"> by naturalization</label>
+        <br>
+        <small>pls. indicate country:</small>
+                    <input type="text" name="dual_country" style="width:60%; margin-top:4px;">
+    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">3. PLACE OF BIRTH</td>
+                <td><input type="text" name="pob"></td>
+                <td class="label" rowspan="3">17. RESIDENTIAL ADDRESS</td>
+                <td rowspan="3">
+                    <table class="res-table">
+                        <tr>
+                            <td><input type="text" name="res_house" placeholder="House/Block/Lot No."></td>
+                            <td><input type="text" name="res_street" placeholder="Street"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="res_subdivision" placeholder="Subdivision/Village"></td>
+                            <td><input type="text" name="res_barangay" placeholder="Barangay"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="res_city" placeholder="City/Municipality"></td>
+                            <td><input type="text" name="res_province" placeholder="Province"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="res_zip" placeholder="ZIP CODE" style="width:80px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">4. SEX AT BIRTH</td>
+                <td>
+                    <input type="radio" name="sex" value="Male"> Male
+                    <input type="radio" name="sex" value="Female" style="margin-left:15px;"> Female
+                </td>
+            </tr>
+            <tr>
+                <td class="label">5. CIVIL STATUS</td>
+                <td>
+                    <select name="civil_status">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+       <div class="section-header" style="background-color: #7f7f7f; color: #fff; font-weight: bold; font-style: italic; padding: 5px; text-transform: uppercase; border: 1px solid #000;">II. Family Background</div>
+
+<div style="display: flex; width: 100%; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000; box-sizing: border-box;">
+    
+    <div style="width: 60%; border-right: 1px solid #000; box-sizing: border-box;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; width: 35%; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">22. SPOUSE'S SURNAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_surname" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">FIRST NAME</td>
+                <td style="border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; width: 35%;"><input type="text" name="spouse_firstname" style="width: 90%;"></td>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; font-size: 9px; width: 15%;">NAME EXTENSION (JR., SR.)</td>
+                <td style="border-bottom: 1px solid #000; padding: 4px; width: 15%;"><input type="text" name="spouse_ext" style="width: 80px;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">MIDDLE NAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_middlename" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">OCCUPATION</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_occupation" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">EMPLOYER/BUSINESS NAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_employer" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">BUSINESS ADDRESS</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_bus_address" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">TELEPHONE NO.</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="spouse_tel" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">24. FATHER'S SURNAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="father_surname" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">FIRST NAME</td>
+                <td style="border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;"><input type="text" name="father_firstname" style="width: 90%;"></td>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; font-size: 9px;">NAME EXTENSION (JR., SR.)</td>
+                <td style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="father_ext" style="width: 80px;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px;">MIDDLE NAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="father_middlename" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; font-size: 10px;">25. MOTHER'S MAIDEN NAME</td>
+                <td colspan="3" style="background-color: #eaeaea; border-bottom: 1px solid #000; padding: 4px;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; padding-left: 15px;">SURNAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="mother_surname" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 4px; padding-left: 15px;">FIRST NAME</td>
+                <td colspan="3" style="border-bottom: 1px solid #000; padding: 4px;"><input type="text" name="mother_firstname" style="width: 95%;"></td>
+            </tr>
+            <tr>
+                <td class="label" style="background-color: #eaeaea; font-weight: bold; border-right: 1px solid #000; padding: 4px; padding-left: 15px;">MIDDLE NAME</td>
+                <td colspan="3" style="padding: 4px;"><input type="text" name="mother_middlename" style="width: 95%;"></td>
+            </tr>
+        </table>
+    </div>
+        <td style="width: 40%; padding: 0; vertical-align: top; border: none;">
+            <table style="width: 100%; border-collapse: collapse; height: 100%;">
+                <tr>
+                    <td class="label" style="text-align: center; font-size: 10px; width: 70%;">23. NAME of CHILDREN (Write full name and list all)</td>
+                    <td class="label" style="text-align: center; font-size: 10px; width: 30%;">DATE OF BIRTH (dd/mm/yyyy)</td>
+                </tr>
+                
+                <tr>
+                    <td><input type="text" name="child_name_1"></td>
+                    <td><input type="date" name="child_dob_1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_2"></td>
+                    <td><input type="date" name="child_dob_2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_3"></td>
+                    <td><input type="date" name="child_dob_3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_4"></td>
+                    <td><input type="date" name="child_dob_4"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_5"></td>
+                    <td><input type="date" name="child_dob_5"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_6"></td>
+                    <td><input type="date" name="child_dob_6"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_7"></td>
+                    <td><input type="date" name="child_dob_7"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_8"></td>
+                    <td><input type="date" name="child_dob_8"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_9"></td>
+                    <td><input type="date" name="child_dob_9"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_10"></td>
+                    <td><input type="date" name="child_dob_10"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="child_name_11"></td>
+                    <td><input type="date" name="child_dob_11"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right; color: red; font-style: italic; font-size: 9px; padding: 2px; border-top: 1px solid #000;">
+                        (Continue on separate sheet if necessary)
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </div></div></td></tr></table>
+    <div style="display: block; clear: both; width: 100%; position: relative; margin-top: 25px;"></div>
+    <div class="section-header" style="background-color: #7f7f7f; color: #fff; font-weight: bold; font-style: italic; padding: 5px; text-transform: uppercase; border: 1px solid #000;">III. Educational Background</div>
+
+<table class="pds-table">
+    <thead>
+        <tr class="pds-bg-gray pds-center">
+            <td rowspan="2" style="width: 15%;">26. LEVEL</td>
+            <td rowspan="2" style="width: 25%;">NAME OF SCHOOL<br><small>(Write in full)</small></td>
+            <td rowspan="2" style="width: 25%;">BASIC EDUCATION/DEGREE/COURSE<br><small>(Write in full)</small></td>
+            <td colspan="2" style="width: 12%;">PERIOD OF ATTENDANCE<br><small>(yyyy)</small></td>
+            <td rowspan="2" style="width: 10%;">HIGHEST LEVEL/<br>UNITS EARNED</td>
+            <td rowspan="2" style="width: 6%;">YEAR<br>GRADUATED</td>
+            <td rowspan="2" style="width: 7%;">SCHOLARSHIP/<br>HONORS</td>
+        </tr>
+        <tr class="pds-bg-gray pds-center">
+            <td>From</td>
+            <td>To</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="pds-bg-gray">ELEMENTARY</td>
+            <td><input type="text" name="elem_school"></td>
+            <td><input type="text" name="elem_degree"></td>
+            <td><input type="text" name="elem_from" placeholder="yyyy" class="pds-center"></td>
+            <td><input type="text" name="elem_to" placeholder="yyyy" class="pds-center"></td>
+            <td><input type="text" name="elem_units"></td>
+            <td><input type="text" name="elem_year" class="pds-center"></td>
+            <td><input type="text" name="elem_honors"></td>
+        </tr>
+        <tr>
+            <td class="pds-bg-gray">SECONDARY</td>
+            <td><input type="text" name="sec_school"></td>
+            <td><input type="text" name="sec_degree"></td>
+            <td><input type="text" name="sec_from" placeholder="yyyy" class="pds-center"></td>
+            <td><input type="text" name="sec_to" placeholder="yyyy" class="pds-center"></td>
+            <td><input type="text" name="sec_units"></td>
+            <td><input type="text" name="sec_year" class="pds-center"></td>
+            <td><input type="text" name="sec_honors"></td>
+        </tr>
+        <tr class="pds-center text-red-italic">
+            <td colspan="8">(Continue on separate sheet if necessary)</td>
+        </tr>
+    </tbody>
+</table>
+<table class="sig-bar">
+    <tr>
+        <td class="pds-bg-gray pds-center" style="width: 15%;">SIGNATURE</td>
+        <td class="pds-center text-red-italic" style="width: 45%;">(e-signature/digital certificate)
+        </td>
+        <td class="pds-bg-gray pds-center" style="width: 10%;">DATE</td>
+        <td style="width: 30%; padding-left: 5px;"><input type="date" name="pds_date"></td>
+    </tr>
+</table>
+</table>
+</body>
+</html>

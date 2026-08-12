@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule</title>
+    <style>
+  .schedule-header {
+    display: flex; 
+    justify-content: space-between; 
+    font-family: sans-serif; 
+    font-size: 14px; 
+    font-weight: bold; 
+    margin: 20px 10px 10px 10px;
+  }
+
+  .schedule-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    font-family: sans-serif; 
+    font-size: 11px; 
+    text-align: center; 
+    color: #000000; 
+    margin-bottom: 30px;
+  }
+
+  .schedule-table th, 
+  .schedule-table td {
+    border: 1px solid black; 
+    padding: 6px;
+  }
+
+  .schedule-table th {
+    background-color: #f2f2f2;
+    padding: 8px; 
+    font-weight: bold; 
+    width: 16.8%;
+  }
+
+  .schedule-table th:first-child {
+    width: 16%;
+  }
+
+  .time-col {
+    font-weight: bold;
+  }
+
+  .break-row {
+    padding: 12px; 
+    background-color: white;
+  }
+
+  .shaded-cell {
+    background-color: beige;
+  }
+    </style>
+</head>
+<body>
+<div style="display: flex; align-items: 
+    center; justify-content: center; gap: 
+    15px; margin-bottom: 20px;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Emilio_Aguinaldo_College_seal.svg" alt="EAC 
+  Logo" style="width: 70px; height: auto;">
+  <h1 style="margin: 0; font-size: 22px; 
+  font-family: sans-serif; font-weight: 
+  bold;">
+    Emilio Aguinaldo College - Manila
+  </h1>
+</div>
+
+    <div style="text-align: center; 
+    font-family: sans-serif; color: black; 
+    line-height: 1.4;">
+  <p style="margin: 0 0 15px 0; font-size: 14px; font-weight: bold;">
+    1113-1117 San Marcelino St., cor Gonzales St.<br>
+    Paco, Manila
+  </p>
+  <p style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; letter-spacing: 0.5px;">
+    HIGH SCHOOL DEPARTMENT
+  </p>
+  <p style="margin: 0 0 15px 0; font-size: 16px; font-weight: bold; letter-spacing: 0.5px;">
+    CLASS SCHEDULE
+  </p>
+  <p style="margin: 0; font-size: 13px; font-weight: bold;">
+    1st Semester SY 2026 - 2027
+  </p>
+</div>
+    <br><div style="display: flex; justify-content: space-between; font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 20px 10px 10px 10px;">
+  <div>GRADE AND SECTION: 11 CPT 2</div>
+  <div>CLASS ADVISER: MR. ROGELIO C. CRUZ, LPT</div>
+</div>
+
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th>TIME</th>
+      <th>MONDAY</th>
+      <th>TUESDAY</th>
+      <th>WEDNESDAY</th>
+      <th>THURSDAY</th>
+      <th>FRIDAY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="time-col">07:30 am - 08:30 am</td>
+      <td><b>GS 1</b><br>11 CPT 2<br>Ancheta, Cyril</td>
+      <td><b>EC 1</b><br>11 CPT 2<br>Estrada, April Marie</td>
+      <td><b>LCS 1</b><br>11 CPT 2<br>Tolentino, Mark Carlo</td>
+      <td><b>GM 1</b><br>11 CPT 2<br>Gumaru, Renz</td>
+      <td><b>LCS 1</b><br>11 CPT 2<br>Tolentino, Mark Carlo</td>
+    </tr>
+    <tr>
+      <td class="time-col">08:30 am - 09:30 am</td>
+      <td><b>ECUL 1</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>GM 1</b><br>11 CPT 2<br>Gumaru, Renz</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>PKLP 1</b><br>11 CPT 2<br>Concepcion, Christian Irvhine</td>
+      <td><b>GM 1</b><br>11 CPT 2<br>Gumaru, Renz</td>
+    </tr>
+    <tr>
+      <td class="time-col">09:30 am - 10:00 am</td>
+      <td colspan="5" class="break-row"></td>
+    </tr>
+    <tr>
+      <td class="time-col">10:00 am - 11:00 am</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>MK 1</b><br>11 CPT 2<br>Deladia, Paul Adrian</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>PKLP 1</b><br>11 CPT 2<br>Concepcion, Christian Irvhine</td>
+    </tr>
+    <tr>
+      <td class="time-col">11:00 am - 12:00 pm</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>PKLP 1</b><br>11 CPT 2<br>Concepcion, Christian Irvhine</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>EC 1</b><br>11 CPT 2<br>Estrada, April Marie</td>
+    </tr>
+    <tr>
+      <td class="time-col">12:00 pm - 01:00 pm</td>
+      <td><b>LCS 1</b><br>11 CPT 2<br>Tolentino, Mark Carlo</td>
+      <td><b>CPNT</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td><b>GS 1</b><br>11 CPT 2<br>Ancheta, Cyril</td>
+      <td><b>MK 1</b><br>11 CPT 2<br>Deladia, Paul Adrian</td>
+      <td><b>GS 1</b><br>11 CPT 2<br>Ancheta, Cyril</td>
+    </tr>
+    <tr>
+      <td class="time-col">01:00 pm - 01:30 pm</td>
+      <td colspan="5" class="break-row"></td>
+    </tr>
+    <tr>
+      <td class="time-col">01:30 pm - 02:30 pm</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="shaded-cell"><b>ECUL 1</b><br>11 CPT 2<br>Cruz, Rogelio</td>
+      <td class="shaded-cell"><b>GM 1</b><br>11 CPT 2<br>Gumaru, Renz</td>
+    </tr>
+    <tr>
+      <td class="time-col">02:30 pm - 03:30 pm</td>
+      <td></td>
+      <td class="shaded-cell"><b>GS 1</b><br>11 CPT 2<br>Ancheta, Cyril</td>
+      <td></td>
+      <td class="shaded-cell"><b>PKLP 1</b><br>11 CPT 2<br>Concepcion, Christian Irvhine</td>
+      <td class="shaded-cell"><b>LCS 1</b><br>11 CPT 2<br>Tolentino, Mark Carlo</td>
+    </tr>
+    <tr>
+      <td class="time-col">03:30 pm - 04:00 pm</td>
+      <td colspan="5" style="padding: 12px;"></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

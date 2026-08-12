@@ -1,0 +1,32 @@
+body { margin: 0;
+    
+}
+tr,th,td, table {
+            border:1px solid black;
+            padding: 2px;
+        }
+header { text-align: center; font-family: Sans-Serif; padding:10px; background-color: lightblue;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.titlemenu {
+    background-color: blue;
+    color: white;
+}
+tr:hover {
+  background-color: Pink;
+  cursor: pointer;
+}
+tr {
+  transition: background-color 0.3s ease;
+}
+
+
